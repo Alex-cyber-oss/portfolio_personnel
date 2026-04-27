@@ -2,165 +2,72 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">
-<title>Compétences</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<script>
-  // Rediriger vers la page de sélection de langue si aucune langue n'est sélectionnée
-  if (!localStorage.getItem('language')) {
-    window.location.href = 'index.html';
-  }
-</script>
-<script src="languages.js"></script>
+<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">    <title>Compétences</title>
+<link rel= "stylesheet" href="styles.css">
 </head>
 <body>
 <header>
     <div class="logo"><strong>DIGBENE <span>Alex</span></strong></div>
     <nav>
       <ul>
-        <li><a href="home.html" data-i18n="home">Accueil</a></li>
-        <li><a href="a-propos.html" data-i18n="about">À propos</a></li>
-        <li><a href="projets.html" data-i18n="projects">Projets</a></li>
-        <li class="logo"><a href="competences.html" data-i18n="skills"><span>Compétences</span></a></li>
-        <li class="language-selector">
-          <select id="languageSelect" title="Sélectionner une langue">
-            <option value="fr">🇫🇷 Français</option>
-            <option value="en">🇬🇧 English</option>
-            <option value="ru">🇷🇺 Русский</option>
-            <option value="tr">🇹🇷 Türkçe</option>
-          </select>
-        </li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li class="logo"><a href="competences.html"><span>Compétences</span></a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-    <div class="logo" id="apropos"> <span data-i18n="skills_title"> Mes Compétences</span></div>
+    <div class="logo" id="apropos"> <span> Mes Compétences</span></div>
     <section class="competences">
   <div class="grille-competences">
     <!-- Soft Skills -->
     <div class="bloc-skills">
-      <h3 data-i18n="soft_skills">Soft Skills</h3>
+      <h3>Soft Skills</h3>
       <div class="skill">
-        <label data-i18n="rigor">Rigueur académique</label>
+        <label>Rigueur académique</label>
         <progress value="95" max="100"></progress>
       </div>
       <div class="skill">
-        <label data-i18n="organization">Organisation logique</label>
+        <label>Organisation logique</label>
         <progress value="90" max="100"></progress>
       </div>
       <div class="skill">
-        <label data-i18n="analysis">Analyse critique</label>
+        <label>Analyse critique</label>
         <progress value="85" max="100"></progress>
       </div>
       <div class="skill">
-        <label data-i18n="communication">Communication technique</label>
+        <label>Communication technique</label>
         <progress value="80" max="100"></progress>
       </div>
     </div>
 
     <!-- Hard Skills -->
     <div class="bloc-skills">
-      <h3 data-i18n="hard_skills">Hard Skills</h3>
+      <h3>Hard Skills</h3>
       <div class="skill">
-        <label data-i18n="python">Programmation Python</label>
+        <label>Programmation Python</label>
         <progress value="85" max="100"></progress>
       </div>
       <div class="skill">
-        <label data-i18n="c_lang">Programmation C</label>
-        <progress value="80" max="100"></progress>
-      </div>
-      <div class="skill">
-        <label data-i18n="java">Programmation Java</label>
-        <progress value="75" max="100"></progress>
-      </div>
-      <div class="skill">
-        <label data-i18n="web_dev">Développement Web</label>
-        <progress value="70" max="100"></progress>
-      </div>
-    </div>
-
-    <!-- Frameworks & Tools -->
-    <div class="bloc-skills">
-      <h3 data-i18n="frameworks">Frameworks / Outils Web</h3>
-      <div class="skill">
-        <label data-i18n="react">React</label>
-        <progress value="75" max="100"></progress>
-      </div>
-      <div class="skill">
-        <label data-i18n="laravel">Laravel</label>
-        <progress value="70" max="100"></progress>
-      </div>
-      <div class="skill">
-        <label>WordPress</label>
-        <progress value="75" max="100"></progress>
-      </div>
-    </div>
-
-    <!-- Tools -->
-    <div class="bloc-skills">
-      <h3 data-i18n="tools">Outils</h3>
-      <div class="skill">
-        <label data-i18n="github">GitHub</label>
-        <progress value="85" max="100"></progress>
-      </div>
-      <div class="skill">
-        <label data-i18n="vscode">VS Code</label>
+        <label>Arduino & embarqué</label>
         <progress value="90" max="100"></progress>
       </div>
       <div class="skill">
-        <label>Arduino</label>
-        <progress value="80" max="100"></progress>
+        <label>HTML / CSS / JS</label>
+        <progress value="63" max="100"></progress>
       </div>
       <div class="skill">
-        <label>Overleaf (LaTeX)</label>
-        <progress value="85" max="100"></progress>
-      </div>
-    </div>
-
-    <!-- Languages -->
-    <div class="bloc-skills">
-      <h3 data-i18n="languages">Langages de Programmation</h3>
-      <div class="skill">
-        <label>Python, C, Java</label>
-        <progress value="80" max="100"></progress>
-      </div>
-      <div class="skill">
-        <label>HTML5, CSS3, JavaScript</label>
+        <label>Anglais technique</label>
         <progress value="75" max="100"></progress>
-      </div>
-      <div class="skill">
-        <label>PHP, SQL</label>
-        <progress value="70" max="100"></progress>
-      </div>
-      <div class="skill">
-        <label>LaTeX</label>
-        <progress value="85" max="100"></progress>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-    <div class="reseaux">
-      <p data-i18n="footer_follow">Retrouvez-moi sur :</p>
-      <a href="https://www.linkedin.com/in/alex-digbene-b470a5337/" target="_blank" class="icone" title="LinkedIn">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://github.com/alex-cyber-oss" target="_blank" class="icone" title="GitHub">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="mailto:digbenealex@gmail.com" class="icone" title="Email">
-        <i class="fas fa-envelope"></i> Email
-      </a>
-      <a href="https://wa.me/22897795103" target="_blank" class="icone" title="WhatsApp">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-    </div>
-  </footer>
-
 </body>
+
 
 </html>
 
