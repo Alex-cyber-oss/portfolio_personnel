@@ -2,48 +2,65 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">    <title>Projets</title>
-<link rel= "stylesheet" href="styles.css">
+<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">
+<title data-i18n="projects_title">Projets</title>
+<link rel="stylesheet" href="styles.css">
+<script src="languages.js"></script>
 </head>
 <body>
 <header>
     <div class="logo"><strong>DIGBENE <span>Alex</span></strong></div>
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li class="logo"><a href="projets.html"><span>Projets</span></a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="home.html" data-i18n="home">Accueil</a></li>
+        <li><a href="a-propos.html" data-i18n="about">À propos</a></li>
+        <li class="logo"><a href="projets.html"><span data-i18n="projects">Projets</span></a></li>
+        <li><a href="competences.html" data-i18n="skills">Compétences</a></li>
       </ul>
     </nav>
+    <div class="language-selector">
+      <button onclick="languageManager.setLanguage('fr')">🇫🇷</button>
+      <button onclick="languageManager.setLanguage('en')">🇬🇧</button>
+      <button onclick="languageManager.setLanguage('ru')">🇷🇺</button>
+      <button onclick="languageManager.setLanguage('tr')">🇹🇷</button>
+    </div>
   </header>
 
-    <div class="logo" id="apropos"> <span>Mes projets</span></div>
+    <div class="logo" id="apropos"> <span data-i18n="projects_title">Mes projets</span></div>
     <section class="projets">
   <div class="grille-projets">
     <!-- Projet 1 -->
     <div class="carte-projet">
-      <h3>Portfolio Web</h3>
-      <p>Site personnel développé en HTML, CSS et JavaScript, avec navigation fluide et design responsive.</p>
-      <a href="index.html" class="btn">Voir le projet</a>
+      <h3 data-i18n="portfolio_title">Portfolio Web</h3>
+      <p data-i18n="portfolio_desc">Site personnel développé en HTML, CSS et JavaScript, avec navigation fluide et design responsive.</p>
+      <a href="index.html" class="btn" data-i18n="view_project">Voir le projet</a>
     </div>
 
     <!-- Projet 2 -->
     <div class="carte-projet">
-      <h3>Calculateur de prêt hypotécaire</h3>
-      <p>Calculateur de prêt hypothécaire développé en HTML, CSS et JavaScript. Il calcule automatiquement le paiement mensuel estimé.</p>
-      <a href="https://codepen.io/Alex-cyber-oss/pen/zxvbNdz" class="btn">Voir le projet</a>
+      <h3 data-i18n="mortgage_title">Calculateur de prêt hypotécaire</h3>
+      <p data-i18n="mortgage_desc">Calculateur de prêt hypothécaire développé en HTML, CSS et JavaScript. Il calcule automatiquement le paiement mensuel estimé.</p>
+      <a href="https://codepen.io/Alex-cyber-oss/pen/zxvbNdz" class="btn" data-i18n="view_project">Voir le projet</a>
     </div>
 
     <!-- Projet 3 -->
     <div class="carte-projet">
-      <h3>Studenthub</h3>
-      <p>Site web d'organisation et de gestion de cours et tâches pour étudiants.</p>
-      <a href="https://stdh.vercel.app/" class="btn">Voir le projet</a>
+      <h3 data-i18n="qcm_title">QCM avec Python sur Python</h3>
+      <p data-i18n="qcm_desc">QCM codé en Python avec vingt questions portant sur python et donnant une note à la fin.</p>
+      <a href="#" class="btn" data-i18n="view_project">Voir le projet</a>
     </div>
   </div>
 </section>
+
+<footer class="footer">
+    <p data-i18n="footer_follow">Retrouvez-moi sur :</p>
+    <div class="social-links">
+      <a href="https://github.com/Alex-cyber-oss" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/alex-digbene-123456789/" target="_blank">LinkedIn</a>
+      <a href="mailto:digbenealex@gmail.com">Email</a>
+      <a href="https://wa.me/22897795103" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
 
 </body>
 
