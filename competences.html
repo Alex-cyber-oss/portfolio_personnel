@@ -2,72 +2,109 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">    <title>Compétences</title>
-<link rel= "stylesheet" href="styles.css">
+<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">
+<title data-i18n="skills_title">Compétences</title>
+<link rel="stylesheet" href="styles.css">
+<script src="languages.js"></script>
 </head>
 <body>
 <header>
     <div class="logo"><strong>DIGBENE <span>Alex</span></strong></div>
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li class="logo"><a href="competences.html"><span>Compétences</span></a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="home.html" data-i18n="home">Accueil</a></li>
+        <li><a href="a-propos.html" data-i18n="about">À propos</a></li>
+        <li><a href="projets.html" data-i18n="projects">Projets</a></li>
+        <li class="logo"><a href="competences.html"><span data-i18n="skills">Compétences</span></a></li>
       </ul>
     </nav>
+    <div class="language-selector">
+      <button onclick="languageManager.setLanguage('fr')">🇫🇷</button>
+      <button onclick="languageManager.setLanguage('en')">🇬🇧</button>
+      <button onclick="languageManager.setLanguage('ru')">🇷🇺</button>
+      <button onclick="languageManager.setLanguage('tr')">🇹🇷</button>
+    </div>
   </header>
 
-    <div class="logo" id="apropos"> <span> Mes Compétences</span></div>
+    <div class="logo" id="apropos"> <span data-i18n="skills_title">Mes Compétences</span></div>
     <section class="competences">
   <div class="grille-competences">
     <!-- Soft Skills -->
     <div class="bloc-skills">
-      <h3>Soft Skills</h3>
+      <h3 data-i18n="soft_skills">Soft Skills</h3>
       <div class="skill">
-        <label>Rigueur académique</label>
+        <label data-i18n="rigor">Rigueur académique</label>
         <progress value="95" max="100"></progress>
       </div>
       <div class="skill">
-        <label>Organisation logique</label>
+        <label data-i18n="organization">Organisation logique</label>
         <progress value="90" max="100"></progress>
       </div>
       <div class="skill">
-        <label>Analyse critique</label>
+        <label data-i18n="analysis">Analyse critique</label>
         <progress value="85" max="100"></progress>
       </div>
       <div class="skill">
-        <label>Communication technique</label>
+        <label data-i18n="communication">Communication technique</label>
         <progress value="80" max="100"></progress>
       </div>
     </div>
 
     <!-- Hard Skills -->
     <div class="bloc-skills">
-      <h3>Hard Skills</h3>
+      <h3 data-i18n="hard_skills">Hard Skills</h3>
       <div class="skill">
-        <label>Programmation Python</label>
+        <label data-i18n="python">Programmation Python</label>
         <progress value="85" max="100"></progress>
       </div>
       <div class="skill">
-        <label>Arduino & embarqué</label>
+        <label data-i18n="c_lang">Programmation C</label>
         <progress value="90" max="100"></progress>
       </div>
       <div class="skill">
-        <label>HTML / CSS / JS</label>
-        <progress value="63" max="100"></progress>
+        <label data-i18n="web_dev">Développement Web</label>
+        <progress value="75" max="100"></progress>
       </div>
       <div class="skill">
-        <label>Anglais technique</label>
-        <progress value="75" max="100"></progress>
+        <label data-i18n="java">Programmation Java</label>
+        <progress value="70" max="100"></progress>
+      </div>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="bloc-skills">
+      <h3 data-i18n="frameworks">Frameworks / Outils Web</h3>
+      <div class="skill">
+        <label data-i18n="react">React</label>
+        <progress value="60" max="100"></progress>
+      </div>
+      <div class="skill">
+        <label data-i18n="laravel">Laravel</label>
+        <progress value="65" max="100"></progress>
+      </div>
+      <div class="skill">
+        <label data-i18n="github">GitHub</label>
+        <progress value="80" max="100"></progress>
+      </div>
+      <div class="skill">
+        <label data-i18n="vscode">VS Code</label>
+        <progress value="90" max="100"></progress>
       </div>
     </div>
   </div>
 </section>
 
-</body>
+  <footer class="footer">
+    <p data-i18n="footer_follow">Retrouvez-moi sur :</p>
+    <div class="social-links">
+      <a href="https://github.com/Alex-cyber-oss" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/alex-digbene-123456789/" target="_blank">LinkedIn</a>
+      <a href="mailto:digbenealex@gmail.com">Email</a>
+      <a href="https://wa.me/22897795103" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
 
+</body>
 
 </html>
 

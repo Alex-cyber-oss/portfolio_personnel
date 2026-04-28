@@ -2,36 +2,46 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">    <title>Portfolio d'Alex</title>
+<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">
+<title>Portfolio d'Alex</title>
 <link rel="stylesheet" href="styles.css">
-
+<script>
+  // Rediriger automatiquement vers home.html si une langue est déjà sélectionnée
+  if (localStorage.getItem('language')) {
+    window.location.href = 'home.html';
+  }
+</script>
 </head>
 <body>
-<header>
-    <div class="logo"><strong>DIGBENE <span>Alex</span></strong></div>
-    <nav>
-      <ul>
-        <li class="logo"><a href="index.html"><span>Accueil</span></a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="text">
-      <h1>Je suis <span class="prenom">Alex</span>, étudiant en IA et Big Data débutant en developpement web. Je suis passionné par le web, le design l'Intelligence Artificielle et tout ce qui est en rapport avec la tech!</h1>
-      <a href="projets.html" class="btn">Voir mes projets</a>
+  <div class="language-selection">
+    <h1>Choisissez votre langue / Choose your language / Выберите язык / Dilinizi seçin</h1>
+    <div class="language-options">
+      <div class="language-option" onclick="selectLanguage('fr')">
+        <span class="flag">🇫🇷</span>
+        <span class="lang-name">Français</span>
+      </div>
+      <div class="language-option" onclick="selectLanguage('en')">
+        <span class="flag">🇬🇧</span>
+        <span class="lang-name">English</span>
+      </div>
+      <div class="language-option" onclick="selectLanguage('ru')">
+        <span class="flag">🇷🇺</span>
+        <span class="lang-name">Русский</span>
+      </div>
+      <div class="language-option" onclick="selectLanguage('tr')">
+        <span class="flag">🇹🇷</span>
+        <span class="lang-name">Türkçe</span>
+      </div>
     </div>
-    <div class="image">
-      <img src="Ia dew web.png" alt="Développeurs">
-    </div>
-  </section>
+  </div>
 
+  <script>
+    function selectLanguage(lang) {
+      localStorage.setItem('language', lang);
+      window.location.href = 'home.html';
+    }
+  </script>
 </body>
-
 </html>
 
 

@@ -2,26 +2,33 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">    <title>A propos</title>
-<link rel= "stylesheet" href="styles.css">
+<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">
+<title data-i18n="about_title">À propos</title>
+<link rel="stylesheet" href="styles.css">
+<script src="languages.js"></script>
 </head>
 <body>
 <header>
     <div class="logo"><strong>DIGBENE <span>Alex</span></strong></div>
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li class="logo"><a href="a-propos.html"><span>À propos</span></a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="home.html" data-i18n="home">Accueil</a></li>
+        <li class="logo"><a href="a-propos.html"><span data-i18n="about">À propos</span></a></li>
+        <li><a href="projets.html" data-i18n="projects">Projets</a></li>
+        <li><a href="competences.html" data-i18n="skills">Compétences</a></li>
       </ul>
     </nav>
+    <div class="language-selector">
+      <button onclick="languageManager.setLanguage('fr')">🇫🇷</button>
+      <button onclick="languageManager.setLanguage('en')">🇬🇧</button>
+      <button onclick="languageManager.setLanguage('ru')">🇷🇺</button>
+      <button onclick="languageManager.setLanguage('tr')">🇹🇷</button>
+    </div>
   </header>
 
-    <div class="logo" id="apropos"> <span> À propos</span></div>
+    <div class="logo" id="apropos"> <span data-i18n="about_title">À propos</span></div>
     <section class="section-droite">
-        <p><strong> Je m'appelle <span class="prenom">Alex</span>, je suis étudiant en Intelligence Artificielle et Big Data. 
+        <p data-i18n="about_intro"><strong> Je m'appelle <span class="prenom">Alex</span>, je suis étudiant en Intelligence Artificielle et Big Data.
           Je suis passionné par le développement web, le design, l'Intelligence Artificielle et
            tout ce qui touche à la technologie. J'aime créer des sites web attrayants et fonctionnels,
             et je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans ce domaine en constante évolution.</strong></p>
@@ -29,15 +36,73 @@
           <img src="Image Alex.jpg" alt="Ma photo">
         </div>
     </section>
-<section class="section-droite">
-  <!-- texte + image -->
-</section>
 
 <div class="cv-container">
-  <a href="CV_Alex__DIGBENE.pdf" class="btn" download="CV">
+  <a href="CV_Alex__DIGBENE.pdf" class="btn" data-i18n="download_cv" download="CV">
     <strong>Télécharger mon CV</strong>
   </a>
 </div>
+
+    <section class="about-section">
+      <h2 data-i18n="academic_formation">Formation Académique</h2>
+      <div class="about-content">
+        <div class="about-item">
+          <h3 data-i18n="university_lome">Université de Lomé – École polytechnique de Lomé</h3>
+          <p><strong data-i18n="licence_degree">Licence Fondamentale Intelligence Artificielle, Big Data</strong> <span data-i18n="current">(2024 - en cours)</span></p>
+        </div>
+        <div class="about-item">
+          <h3>Lycée Scientifique de Lomé</h3>
+          <p><strong data-i18n="serie_c_bac">Série C – Baccalauréat Mention Assez Bien (science mathématiques)</strong> (2021 - 2024)</p>
+        </div>
+        <div class="about-item">
+          <h3>Collège d'Enseignement Général de Fidokpui</h3>
+          <p><strong data-i18n="bepc_mention">BEPC Mention Très Bien</strong> (2017 - 2021)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2 data-i18n="social_commitments">Engagements et Œuvres Sociales</h2>
+      <div class="about-content">
+        <div class="about-item">
+          <h3 data-i18n="red_cross_member">Membre Croix Rouge Togolaise</h3>
+          <p data-i18n="present">(présent)</p>
+        </div>
+        <div class="about-item">
+          <h3 data-i18n="isoc_member">Membre Internet Society Chapitre Togolais</h3>
+          <p data-i18n="present">(présent)</p>
+        </div>
+        <div class="about-item">
+          <h3 data-i18n="blood_donor">Donneur volontaire de sang</h3>
+          <p data-i18n="present">(présent)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2 data-i18n="languages_section">Langages</h2>
+      <div class="about-content">
+        <div class="about-item">
+          <h3 data-i18n="french_native">Français: Natif</h3>
+        </div>
+        <div class="about-item">
+          <h3 data-i18n="english_b2">Anglais: B2</h3>
+        </div>
+        <div class="about-item">
+          <h3 data-i18n="moba_local">Moba: Langue locale</h3>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer">
+    <p data-i18n="footer_follow">Retrouvez-moi sur :</p>
+    <div class="social-links">
+      <a href="https://github.com/Alex-cyber-oss" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/alex-digbene-123456789/" target="_blank">LinkedIn</a>
+      <a href="mailto:digbenealex@gmail.com">Email</a>
+      <a href="https://wa.me/22897795103" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
 
 </body>
 
