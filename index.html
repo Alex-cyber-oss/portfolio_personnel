@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio d'Alex - Sélection de langue">
 <title>Portfolio d'Alex</title>
 <link rel="stylesheet" href="styles.css">
 <script>
@@ -12,34 +13,38 @@
   }
 </script>
 </head>
-<body>
-  <div class="language-selection">
+<body class="language-selection-page">
+  <div class="language-selection-container">
     <h1>Choisissez votre langue / Choose your language / Выберите язык / Dilinizi seçin</h1>
     <div class="language-options">
-      <div class="language-option" onclick="selectLanguage('fr')">
-        <span class="flag">🇫🇷</span>
-        <span class="lang-name">Français</span>
+      <div class="language-option" data-lang="fr">
+        <div class="flag">🇫🇷</div>
+        <div class="lang-name">Français</div>
       </div>
-      <div class="language-option" onclick="selectLanguage('en')">
-        <span class="flag">🇬🇧</span>
-        <span class="lang-name">English</span>
+      <div class="language-option" data-lang="en">
+        <div class="flag">🇬🇧</div>
+        <div class="lang-name">English</div>
       </div>
-      <div class="language-option" onclick="selectLanguage('ru')">
-        <span class="flag">🇷🇺</span>
-        <span class="lang-name">Русский</span>
+      <div class="language-option" data-lang="ru">
+        <div class="flag">🇷🇺</div>
+        <div class="lang-name">Русский</div>
       </div>
-      <div class="language-option" onclick="selectLanguage('tr')">
-        <span class="flag">🇹🇷</span>
-        <span class="lang-name">Türkçe</span>
+      <div class="language-option" data-lang="tr">
+        <div class="flag">🇹🇷</div>
+        <div class="lang-name">Türkçe</div>
       </div>
     </div>
   </div>
 
   <script>
-    function selectLanguage(lang) {
-      localStorage.setItem('language', lang);
-      window.location.href = 'home.html';
-    }
+    // Gestionnaire de sélection de langue
+    document.querySelectorAll('.language-option').forEach(option => {
+      option.addEventListener('click', function() {
+        const selectedLang = this.getAttribute('data-lang');
+        localStorage.setItem('language', selectedLang);
+        window.location.href = 'home.html';
+      });
+    });
   </script>
 </body>
 </html>
