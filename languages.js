@@ -8,11 +8,16 @@ const translations = {
     skills: "Compétences",
     footer_follow: "Retrouvez-moi sur :",
     language: "Langue",
+
+    // Index
+    hero_title: "Je suis <span class='prenom'>Alex</span>, étudiant en IA et Big Data débutant en developpement web. Je suis passionné par le web, le design l'Intelligence Artificielle et tout ce qui est en rapport avec la tech!",
+    view_projects: "Voir mes projets",
     
     // Projets
     projects_title: "Mes Projets",
     portfolio_title: "Portfolio Web",
     portfolio_desc: "Site personnel développé en HTML, CSS et JavaScript, avec navigation fluide et design responsive.",
+
     view_project: "Voir le projet",
     mortgage_title: "Calculateur de prêt hypotécaire",
     mortgage_desc: "Calculateur de prêt hypothécaire développé en HTML, CSS et JavaScript. Il calcule automatiquement le paiement mensuel estimé.",
