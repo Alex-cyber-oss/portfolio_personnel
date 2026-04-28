@@ -19,12 +19,55 @@ header {
 nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+}
+
+nav li.language-selector {
+  margin-left: auto;
+}
+
+.language-selector select {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.95em;
+  background: white;
+  color: #111;
+  cursor: pointer;
+}
+
+.social-links,
+.reseaux {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-links a,
+.icone {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.08);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-links a:hover,
+.icone:hover {
+  background-color: rgba(255,255,255,0.18);
+  color: #00d4b1;
 }
 
 .hero {

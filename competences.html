@@ -2,9 +2,16 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Portfolio d'Alex, étudiant en IA et Big Data, passionné par le développement web.">
 <title data-i18n="skills_title">Compétences</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script>
+  if (!localStorage.getItem('language')) {
+    window.location.href = 'index.html';
+  }
+</script>
 <script src="languages.js"></script>
 </head>
 <body>
@@ -15,17 +22,17 @@
         <li><a href="home.html" data-i18n="home">Accueil</a></li>
         <li><a href="a-propos.html" data-i18n="about">À propos</a></li>
         <li><a href="projets.html" data-i18n="projects">Projets</a></li>
-        <li class="logo"><a href="competences.html"><span data-i18n="skills">Compétences</span></a></li>
+        <li><a href="competences.html" data-i18n="skills">Compétences</a></li>
+        <li class="language-selector">
+          <select id="languageSelect" title="Sélectionner une langue">
+            <option value="fr">🇫🇷 Français</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="tr">🇹🇷 Türkçe</option>
+          </select>
+        </li>
       </ul>
     </nav>
-    <div class="language-selector">
-      <select id="languageSelect" title="Sélectionner une langue">
-        <option value="fr">🇫🇷 Français</option>
-        <option value="en">🇬🇧 English</option>
-        <option value="ru">🇷🇺 Русский</option>
-        <option value="tr">🇹🇷 Türkçe</option>
-      </select>
-    </div>
   </header>
 
     <div class="logo" id="apropos"> <span data-i18n="skills_title">Mes Compétences</span></div>
@@ -99,10 +106,18 @@
 <footer class="footer">
     <p data-i18n="footer_follow">Retrouvez-moi sur :</p>
     <div class="social-links">
-      <a href="https://github.com/Alex-cyber-oss" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/alex-digbene-123456789/" target="_blank">LinkedIn</a>
-      <a href="mailto:digbenealex@gmail.com">Email</a>
-      <a href="https://wa.me/22897795103" target="_blank">WhatsApp</a>
+          <a href="https://www.linkedin.com/in/alex-digbene-b470a5337/" target="_blank" class="icone" title="LinkedIn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/alex-cyber-oss" target="_blank" class="icone" title="GitHub">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="mailto:digbenealex@gmail.com" class="icone" title="Email">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://wa.me/22897795103" target="_blank" class="icone" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
     </div>
   </footer>
 
