@@ -18,13 +18,26 @@ const translations = {
     mortgage_desc: "Calculateur de prêt hypothécaire développé en HTML, CSS et JavaScript. Il calcule automatiquement le paiement mensuel estimé.",
     qcm_title: "QCM avec Python sur Python",
     qcm_desc: "QCM codé en Python avec vingt questions portant sur python et donnant une note à la fin.",
+    stdh_title: "StudentHub",
+    stdh_desc: "Plateforme web pour la gestion des cours des étudiants, développée avec Node.js, Laravel et JavaScript. Interface intuitive pour suivre et organiser les apprentissages.",
     
     // À propos
     about_title: "À propos",
     about_intro: "Je m'appelle <span class='prenom'>Alex</span>, je suis étudiant en Intelligence Artificielle et Big Data. Je suis passionné par le développement web, le design, l'Intelligence Artificielle et tout ce qui touche à la technologie. J'aime créer des sites web attrayants et fonctionnels, et je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir dans ce domaine en constante évolution.",
     download_cv: "Télécharger mon CV",
-    
-    // Sections À propos
+    professional_objective: "Objectif Professionnel",
+    objective_text: "Devenir ingénieur en IA et Big Data, spécialisé dans la conception et le déploiement de modèles intelligents pour l'analyse de données, l'automatisation et la reconnaissance visuelle.",
+    certifications: "Certifications",
+    first_aid: "Premiers secours à base communautaire",
+    it_english: "Initiation à l'informatique et Anglais pratique",
+    universal_acceptance: "Journée de l'acceptation universelle",
+    web_beginner: "Développement Web – Niveau Débutant",
+    web_intermediate: "Développement Web – Niveau Intermédiaire",
+    web_advanced: "Développement Web – Niveau Avancé",
+    interests: "Centres d'Intérêt",
+    interests_text: "Technologies du numérique, IA, Mathématiques, innovation sociale.",
+    hobbies: "Loisirs",
+    hobbies_text: "Basketball, Films, Séries et animes, Lecture, Jeux vidéos.",
     academic_formation: "Formation Académique",
     social_commitments: "Engagements et Œuvres Sociales",
     current: "(en cours)",
@@ -47,13 +60,26 @@ const translations = {
     python: "Programmation Python",
     c_lang: "Programmation C",
     java: "Programmation Java",
+    php: "PHP",
+    sql: "SQL",
     web_dev: "Développement Web",
     react: "React",
     laravel: "Laravel",
     github: "GitHub",
     vscode: "VS Code",
-    bepc: "BEPC",
+    wordpress: "WordPress",
+    latex: "LaTeX",
+    arduino: "Arduino",
+    overleaf: "Overleaf",
+    bepc: "Brevet d'Études du Premier Cycle",
     university_lome: "Université de Lomé – École polytechnique de Lomé (Université de Lomé)",
+    professional_objective: "Objectif Professionnel",
+    objective_text: "Devenir ingénieur en IA et Big Data, spécialisé dans la conception et le déploiement de modèles intelligents pour l'analyse de données, l'automatisation et la reconnaissance visuelle.",
+    certifications: "Certifications",
+    interests: "Centres d'Intérêt",
+    interests_text: "Technologies du numérique, IA, Mathématiques, innovation sociale.",
+    hobbies: "Loisirs",
+    hobbies_text: "Basketball, Films, Séries et animes, Lecture, Jeux vidéos.",
   },
   en: {
     // Navigation
@@ -77,13 +103,26 @@ const translations = {
     mortgage_desc: "Mortgage calculator developed in HTML, CSS and JavaScript. It automatically calculates the estimated monthly payment.",
     qcm_title: "Python QCM on Python",
     qcm_desc: "QCM coded in Python with twenty questions about Python and giving a grade at the end.",
+    stdh_title: "StudentHub",
+    stdh_desc: "Web platform for managing student courses, developed with Node.js, Laravel and JavaScript. Intuitive interface to track and organize learning.",
     
     // About
     about_title: "About",
     about_intro: "My name is <span class='prenom'>Alex</span>, I'm a student in Artificial Intelligence and Big Data. I'm passionate about web development, design, Artificial Intelligence and everything related to technology. I love creating attractive and functional websites, and I'm always looking for new opportunities to learn and grow in this constantly evolving field.",
     download_cv: "Download my CV",
-    
-    // About sections
+    professional_objective: "Professional Objective",
+    objective_text: "Become an AI and Big Data engineer, specialized in the design and deployment of intelligent models for data analysis, automation and visual recognition.",
+    certifications: "Certifications",
+    first_aid: "Community-based first aid",
+    it_english: "Introduction to IT and Practical English",
+    universal_acceptance: "Universal Acceptance Day",
+    web_beginner: "Web Development – Beginner Level",
+    web_intermediate: "Web Development – Intermediate Level",
+    web_advanced: "Web Development – Advanced Level",
+    interests: "Interests",
+    interests_text: "Digital technologies, AI, Mathematics, social innovation.",
+    hobbies: "Hobbies",
+    hobbies_text: "Basketball, Movies, Series and anime, Reading, Video games.",
     academic_formation: "Academic Formation",
     social_commitments: "Social Commitments and Works",
     current: "(current)",
@@ -115,12 +154,17 @@ const translations = {
     python: "Python Programming",
     c_lang: "C Programming",
     java: "Java Programming",
-    web_dev: "Web Development",
+    php: "PHP",
+    sql: "SQL",
+    wordpress: "WordPress",
+    latex: "LaTeX",
+    arduino: "Arduino",
+    overleaf: "Overleaf",
     react: "React",
     laravel: "Laravel",
     github: "GitHub",
     vscode: "VS Code",
-    bepc: "BEPC",
+    bepc: "Junior Secondary School Certificate",
     university_lome: "University of Lomé – École Polytechnique de Lomé (University of Lomé)",
   },
   ru: {
@@ -145,13 +189,26 @@ const translations = {
     mortgage_desc: "Калькулятор ипотечного кредита, разработанный на HTML, CSS и JavaScript. Он автоматически рассчитывает предполагаемый ежемесячный платеж.",
     qcm_title: "Тест по Python на Python",
     qcm_desc: "Тест, закодированный на Python с двадцатью вопросами о Python и выставлением оценки в конце.",
+    stdh_title: "StudentHub",
+    stdh_desc: "Веб-платформа для управления курсами студентов, разработанная с использованием Node.js, Laravel и JavaScript. Интуитивный интерфейс для отслеживания и организации обучения.",
     
     // About
     about_title: "Обо мне",
     about_intro: "Меня зовут <span class='prenom'>Alex</span>, я студент Искусственного Интеллекта и Big Data. Я увлечен веб-разработкой, дизайном, искусственным интеллектом и всем, что связано с технологией. Я люблю создавать привлекательные и функциональные веб-сайты и всегда ищу новые возможности для обучения и роста в этой постоянно развивающейся области.",
     download_cv: "Скачать мое резюме",
-    
-    // Разделы "Обо мне"
+    professional_objective: "Профессиональная цель",
+    objective_text: "Стать инженером АИ и Big Data, специализирующийся на проектировании и расположении интеллектуальных моделей для анализа данных, автоматизации и оптического распознавания.",
+    certifications: "Сертификации",
+    first_aid: "Первая помощь на случокском уровне",
+    it_english: "Ввод в итю и Практический английский",
+    universal_acceptance: "День всеобщего принятия",
+    web_beginner: "Веб-развитие – Уровень Начинающих",
+    web_intermediate: "Веб-развитие – Нредний уровень",
+    web_advanced: "Веб-развитие – Продвинутый уровень",
+    interests: "Центры интересов",
+    interests_text: "Цифровые технологии, АИ, Математика, социальные инновации.",
+    hobbies: "Увлечения",
+    hobbies_text: "Баскетбол, Кино, Сериалы и аниме, Чтение, Видеоигры.",
     academic_formation: "Академическое образование",
     social_commitments: "Социальные обязательства и работы",
     current: "(текущее)",
@@ -181,12 +238,18 @@ const translations = {
     python: "Программирование на Python",
     c_lang: "Программирование на C",
     java: "Программирование на Java",
+    php: "PHP",
+    sql: "SQL",
     web_dev: "Веб-разработка",
     react: "React",
     laravel: "Laravel",
     github: "GitHub",
     vscode: "VS Code",
-    bepc: "BEPC",
+    wordpress: "WordPress",
+    latex: "LaTeX",
+    arduino: "Arduino",
+    overleaf: "Overleaf",
+    bepc: "Свидетельство о начальном образовании",
     university_lome: "Университет Ломе – Политехническая школа Ломе (Университет Ломе)",
   },
   tr: {
@@ -211,13 +274,26 @@ const translations = {
     mortgage_desc: "HTML, CSS ve JavaScript ile geliştirilmiş konut kredisi hesaplayıcı. Otomatik olarak tahmini aylık ödemeyi hesaplar.",
     qcm_title: "Python Hakkında Python ile Test",
     qcm_desc: "Python ile kodlanmış, Python hakkında yirmi soru içeren ve sonunda not veren test.",
+    stdh_title: "StudentHub",
+    stdh_desc: "Node.js, Laravel ve JavaScript ile geliştirilen öğrenci kurslarını yönetmek için web platformu. Öğrenmeyi takip etmek ve düzenlemek için sezgisel arayüz.",
     
     // About
     about_title: "Hakkında",
     about_intro: "Adım <span class='prenom'>Alex</span>, Yapay Zeka ve Big Data öğrencisiyim. Web geliştirme, tasarım, yapay zeka ve teknolojiyle ilgili her şeyden tutkulu. Çekici ve işlevsel web siteleri oluşturmayı seviyorum ve bu sürekli gelişen alanda öğrenme ve büyüme için her zaman yeni fırsatlar arıyorum.",
     download_cv: "CV'mi İndir",
-    
-    // Hakkında bölümleri
+    professional_objective: "Profesyonel Hedef",
+    objective_text: "Veri analizi, otomasyon ve görsel tanıma için akilli modellerin tasarlanması ve başarlanmasında uzmanlaşık YZ ve Big Data mühendisi olun.",
+    certifications: "Sertifikalar",
+    first_aid: "Toplum tabanlı ilkyardsın c",
+    it_english: "Bilgisayara giriş ve pratik İngilizce",
+    universal_acceptance: "Evrensel kabul günü",
+    web_beginner: "Web Geliştirme – Başlangıç Seviyesi",
+    web_intermediate: "Web Geliştirme – Orta Seviye",
+    web_advanced: "Web Geliştirme – İleri Seviye",
+    interests: "İlgi Alanları",
+    interests_text: "Dijital teknolojiler, YZ, Matematik, sosyal inovasyon.",
+    hobbies: "Hobiler",
+    hobbies_text: "Basketbol, Filmler, Diziler ve anime, Okuma, Video oyunları.",
     academic_formation: "Akademik Eğitim",
     social_commitments: "Sosyal Sorumluluklar ve Çalışmalar",
     current: "(güncel)",
@@ -247,12 +323,17 @@ const translations = {
     python: "Python Programlama",
     c_lang: "C Programlama",
     java: "Java Programlama",
-    web_dev: "Web Geliştirme",
+    php: "PHP",
+    sql: "SQL",
+    wordpress: "WordPress",
+    latex: "LaTeX",
+    arduino: "Arduino",
+    overleaf: "Overleaf",
     react: "React",
     laravel: "Laravel",
     github: "GitHub",
     vscode: "VS Code",
-    bepc: "BEPC",
+    bepc: "İlk Dönem Sınavı Sertifikası",
     university_lome: "Lomé Üniversitesi – Lomé Politeknik Okulu (Lomé Üniversitesi)",
   }
 };
@@ -308,9 +389,14 @@ window.addEventListener('load', () => {
   // Écouter les changements de langue
   const languageSelect = document.getElementById('languageSelect');
   if (languageSelect) {
-    languageSelect.addEventListener('change', (e) => {
-      languageManager.setLanguage(e.target.value);
-    });
+    // Définir la valeur actuelle du select
     languageSelect.value = languageManager.currentLanguage;
+
+    languageSelect.addEventListener('change', (e) => {
+      const selectedLang = e.target.value;
+      languageManager.setLanguage(selectedLang);
+      // Mettre à jour la valeur du select après changement
+      languageSelect.value = selectedLang;
+    });
   }
 });
